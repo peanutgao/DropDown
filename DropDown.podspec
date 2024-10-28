@@ -21,7 +21,9 @@ Pod::Spec.new do |s|
     :git => "https://github.com/AssistoLab/DropDown.git",
     :tag => "v#{s.version.to_s}"
   }
-
+  s.resource_bundles = {
+    'DropDown' => ['DropDown/PrivacyInfo.xcprivacy']
+  }
   s.source_files = "DropDown/src/**/*.swift"
   s.resources = "DropDown/resources/*.{png,xib}"
   s.requires_arc = true
